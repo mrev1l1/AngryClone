@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Character">
+      <UniqueIdentifier>{6b937f3b-4d92-453f-a074-26e5c0d39ac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConstraintSolver">
+      <UniqueIdentifier>{dfeed2fa-0662-4d6b-8274-a068f99a5a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dynamics">
+      <UniqueIdentifier>{d4af531f-9085-427d-95ed-bd18bb515351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Featherstone">
+      <UniqueIdentifier>{d14345d2-5ac7-4fe2-8a3a-6d3357361045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MLCPSolver">
+      <UniqueIdentifier>{1eebe96b-3265-4d21-84ea-8e516d9fc562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vehicle">
+      <UniqueIdentifier>{931b3e49-c74e-49fc-a5c0-a90b81225ca6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Character\btCharacterControllerInterface.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Character\btKinematicCharacterController.h">
+      <Filter>Character</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btConeTwistConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btConstraintSolver.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btContactConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btContactSolverInfo.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btFixedConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btGearConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofSpring2Constraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btHinge2Constraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btHingeConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btJacobianEntry.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btNNCGConstraintSolver.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btSliderConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btSolverBody.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btSolverConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btTypedConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btUniversalConstraint.h">
+      <Filter>ConstraintSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Dynamics\btActionInterface.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Dynamics\btDynamicsWorld.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Dynamics\btRigidBody.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Dynamics\btSimpleDynamicsWorld.h">
+      <Filter>Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBody.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyConstraint.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyConstraintSolver.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyDynamicsWorld.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyJointLimitConstraint.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyJointMotor.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyLink.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyLinkCollider.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyPoint2Point.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodySolverConstraint.h">
+      <Filter>Featherstone</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btDantzigLCP.h">
+      <Filter>MLCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btDantzigSolver.h">
+      <Filter>MLCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btLemkeAlgorithm.h">
+      <Filter>MLCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btLemkeSolver.h">
+      <Filter>MLCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btMLCPSolver.h">
+      <Filter>MLCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btMLCPSolverInterface.h">
+      <Filter>MLCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btPATHSolver.h">
+      <Filter>MLCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btSolveProjectedGaussSeidel.h">
+      <Filter>MLCPSolver</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Vehicle\btRaycastVehicle.h">
+      <Filter>Vehicle</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Vehicle\btVehicleRaycaster.h">
+      <Filter>Vehicle</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Vehicle\btWheelInfo.h">
+      <Filter>Vehicle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Character\btKinematicCharacterController.cpp">
+      <Filter>Character</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btContactConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btFixedConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btGearConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofSpring2Constraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btNNCGConstraintSolver.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp">
+      <Filter>ConstraintSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp">
+      <Filter>Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Dynamics\btRigidBody.cpp">
+      <Filter>Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp">
+      <Filter>Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBody.cpp">
+      <Filter>Featherstone</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyConstraint.cpp">
+      <Filter>Featherstone</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyConstraintSolver.cpp">
+      <Filter>Featherstone</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyDynamicsWorld.cpp">
+      <Filter>Featherstone</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyJointLimitConstraint.cpp">
+      <Filter>Featherstone</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyJointMotor.cpp">
+      <Filter>Featherstone</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Featherstone\btMultiBodyPoint2Point.cpp">
+      <Filter>Featherstone</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btDantzigLCP.cpp">
+      <Filter>MLCPSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btLemkeAlgorithm.cpp">
+      <Filter>MLCPSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\MLCPSolvers\btMLCPSolver.cpp">
+      <Filter>MLCPSolver</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Vehicle\btRaycastVehicle.cpp">
+      <Filter>Vehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\BulletDynamics\Vehicle\btWheelInfo.cpp">
+      <Filter>Vehicle</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

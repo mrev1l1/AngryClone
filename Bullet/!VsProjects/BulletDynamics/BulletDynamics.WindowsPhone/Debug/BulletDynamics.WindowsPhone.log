@@ -1,0 +1,87 @@
+﻿Build started 02.07.2015 16:48:57.
+     1>Project "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.WindowsPhone\BulletDynamics.WindowsPhone.vcxproj" on node 4 (Rebuild target(s)).
+     1>ClCompile:
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.WindowsPhone\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\\" /ZI /nologo /W3 /WX- /sdl /MP /Od /Oy- /D PSAPI_VERSION=2 /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /D _UITHREADCTXT_SUPPORT=0 /D _UNICODE /D UNICODE /D _DEBUG /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Character\btKinematicCharacterController.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btConeTwistConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btContactConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btFixedConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btGearConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofSpring2Constraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btGeneric6DofSpringConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btHinge2Constraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btNNCGConstraintSolver.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btPoint2PointConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btSequentialImpulseConstraintSolver.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btSliderConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btSolve2LinearConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btTypedConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\ConstraintSolver\btUniversalConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Dynamics\btDiscreteDynamicsWorld.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Dynamics\btRigidBody.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Dynamics\btSimpleDynamicsWorld.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Featherstone\btMultiBody.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Featherstone\btMultiBodyConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Featherstone\btMultiBodyConstraintSolver.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Featherstone\btMultiBodyDynamicsWorld.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Featherstone\btMultiBodyJointLimitConstraint.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Featherstone\btMultiBodyJointMotor.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Featherstone\btMultiBodyPoint2Point.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\MLCPSolvers\btDantzigLCP.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\MLCPSolvers\btLemkeAlgorithm.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\MLCPSolvers\btMLCPSolver.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Vehicle\btRaycastVehicle.cpp" "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.Shared\..\..\..\BulletDynamics\Vehicle\btWheelInfo.cpp"
+         btKinematicCharacterController.cpp
+         btConeTwistConstraint.cpp
+         btContactConstraint.cpp
+         btFixedConstraint.cpp
+         btGearConstraint.cpp
+         btGeneric6DofConstraint.cpp
+         btGeneric6DofSpring2Constraint.cpp
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\character\btkinematiccharactercontroller.cpp(138): warning C4305: '=' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\Character\btKinematicCharacterController.cpp)
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\character\btkinematiccharactercontroller.cpp(149): warning C4305: '=' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\Character\btKinematicCharacterController.cpp)
+         btGeneric6DofSpringConstraint.cpp
+         btHinge2Constraint.cpp
+         btHingeConstraint.cpp
+         btNNCGConstraintSolver.cpp
+         btPoint2PointConstraint.cpp
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\constraintsolver\bthingeconstraint.cpp(320): warning C4305: 'initializing' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\ConstraintSolver\btHingeConstraint.cpp)
+         btSequentialImpulseConstraintSolver.cpp
+         btSliderConstraint.cpp
+         btSolve2LinearConstraint.cpp
+         btTypedConstraint.cpp
+         btUniversalConstraint.cpp
+         btDiscreteDynamicsWorld.cpp
+         btRigidBody.cpp
+         btSimpleDynamicsWorld.cpp
+         btMultiBody.cpp
+         btMultiBodyConstraint.cpp
+         btMultiBodyConstraintSolver.cpp
+         btMultiBodyDynamicsWorld.cpp
+         btMultiBodyJointLimitConstraint.cpp
+         btMultiBodyJointMotor.cpp
+         btMultiBodyPoint2Point.cpp
+         btDantzigLCP.cpp
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\featherstone\btmultibodydynamicsworld.cpp(814): warning C4305: 'argument' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\Featherstone\btMultiBodyDynamicsWorld.cpp)
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\featherstone\btmultibodydynamicsworld.cpp(839): warning C4305: 'argument' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\Featherstone\btMultiBodyDynamicsWorld.cpp)
+         btLemkeAlgorithm.cpp
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\featherstone\btmultibodypoint2point.cpp(196): warning C4305: 'argument' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\Featherstone\btMultiBodyPoint2Point.cpp)
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\featherstone\btmultibodypoint2point.cpp(202): warning C4305: 'argument' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\Featherstone\btMultiBodyPoint2Point.cpp)
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\featherstone\btmultibodypoint2point.cpp(209): warning C4305: 'argument' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\Featherstone\btMultiBodyPoint2Point.cpp)
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\featherstone\btmultibodypoint2point.cpp(215): warning C4305: 'argument' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\Featherstone\btMultiBodyPoint2Point.cpp)
+         btMLCPSolver.cpp
+         btRaycastVehicle.cpp
+         btWheelInfo.cpp
+     1>d:\visual studio 2013\flash zip rar 01.июл.2015 12-04-25\directxapp\angryclone\bullet\bulletdynamics\mlcpsolvers\btmlcpsolver.cpp(27): warning C4305: 'initializing' : truncation from 'double' to 'btScalar' (D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\BulletDynamics\MLCPSolvers\btMLCPSolver.cpp)
+       Lib:
+         D:\Visual Studio 2013\VC\bin\Lib.exe /OUT:"D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Debug\BulletDynamics.WindowsPhone\BulletDynamics.WindowsPhone.lib" /NOLOGO Debug\btKinematicCharacterController.obj
+         Debug\btConeTwistConstraint.obj
+         Debug\btContactConstraint.obj
+         Debug\btFixedConstraint.obj
+         Debug\btGearConstraint.obj
+         Debug\btGeneric6DofConstraint.obj
+         Debug\btGeneric6DofSpring2Constraint.obj
+         Debug\btGeneric6DofSpringConstraint.obj
+         Debug\btHinge2Constraint.obj
+         Debug\btHingeConstraint.obj
+         Debug\btNNCGConstraintSolver.obj
+         Debug\btPoint2PointConstraint.obj
+         Debug\btSequentialImpulseConstraintSolver.obj
+         Debug\btSliderConstraint.obj
+         Debug\btSolve2LinearConstraint.obj
+         Debug\btTypedConstraint.obj
+         Debug\btUniversalConstraint.obj
+         Debug\btDiscreteDynamicsWorld.obj
+         Debug\btRigidBody.obj
+         Debug\btSimpleDynamicsWorld.obj
+         Debug\btMultiBody.obj
+         Debug\btMultiBodyConstraint.obj
+         Debug\btMultiBodyConstraintSolver.obj
+         Debug\btMultiBodyDynamicsWorld.obj
+         Debug\btMultiBodyJointLimitConstraint.obj
+         Debug\btMultiBodyJointMotor.obj
+         Debug\btMultiBodyPoint2Point.obj
+         Debug\btDantzigLCP.obj
+         Debug\btLemkeAlgorithm.obj
+         Debug\btMLCPSolver.obj
+         Debug\btRaycastVehicle.obj
+         Debug\btWheelInfo.obj
+         BulletDynamics.WindowsPhone.vcxproj -> D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Debug\BulletDynamics.WindowsPhone\BulletDynamics.WindowsPhone.lib
+       _GenerateProjectPriFileCore:
+         C:\Program Files (x86)\Windows Kits\8.1\\bin\x86\MakePri.exe New -ProjectRoot "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.WindowsPhone\\" -ConfigXml Debug\priconfig.xml -OutputFile "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Debug\BulletDynamics.WindowsPhone\BulletDynamics.pri" -ExtensionDll "C:\Program Files (x86)\Windows Phone Kits\8.1\\bin\x86\MrmEnvironmentExtDl.dll" -IndexName BulletDynamics -Verbose -Overwrite  
+     1>Done Building Project "D:\Visual Studio 2013\Flash ZIP RAR 01.июл.2015 12-04-25\DirectXApp\AngryClone\Bullet\!VsProjects\BulletDynamics\BulletDynamics.WindowsPhone\BulletDynamics.WindowsPhone.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:31.23
