@@ -1,0 +1,42 @@
+﻿Build started 07.07.2015 16:39:57.
+     1>Project "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\AngryClone.Windows.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _DEBUG /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"Debug\pch.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\pch.cpp"
+         pch.cpp
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _DEBUG /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Debug\pch.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj App.xaml.cpp "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\AngryCloneMain.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Common\DeviceResources.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Content\Sample3DSceneRenderer.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Content\SampleFpsTextRenderer.cpp" DirectXPage.xaml.cpp "Generated Files\XamlTypeInfo.Impl.g.cpp"
+         App.xaml.cpp
+         AngryCloneMain.cpp
+         DeviceResources.cpp
+         Sample3DSceneRenderer.cpp
+         SampleFpsTextRenderer.cpp
+         DirectXPage.xaml.cpp
+         XamlTypeInfo.Impl.g.cpp
+       CreateWinMD:
+         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio 2013\VC\\lib\store" /LIBPATH:"D:\Visual Studio 2013\VC\\lib" d2d1.lib d3d11.lib dxgi.lib ole32.lib windowscodecs.lib dwrite.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:ONLY /WINMDFILE:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\AngryCloneMain.obj
+         Debug\pch.obj
+         Debug\DeviceResources.obj
+         Debug\SampleFpsTextRenderer.obj
+         Debug\Sample3DSceneRenderer.obj
+         Debug\App.xaml.obj
+         Debug\DirectXPage.xaml.obj
+         Debug\XamlTypeInfo.Impl.g.obj
+       CompileXamlGeneratedFiles:
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _DEBUG /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Debug\pch.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj "Generated Files\XamlTypeInfo.g.cpp"
+         XamlTypeInfo.g.cpp
+       Link:
+         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio 2013\VC\\lib\store" /LIBPATH:"D:\Visual Studio 2013\VC\\lib" d2d1.lib d3d11.lib dxgi.lib ole32.lib windowscodecs.lib dwrite.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:NO /WINMDFILE:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\AngryCloneMain.obj
+         Debug\pch.obj
+         Debug\DeviceResources.obj
+         Debug\SampleFpsTextRenderer.obj
+         Debug\Sample3DSceneRenderer.obj
+         Debug\App.xaml.obj
+         Debug\DirectXPage.xaml.obj
+         Debug\XamlTypeInfo.Impl.g.obj
+         Debug\XamlTypeInfo.g.obj
+            Creating library D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.lib and object D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exp
+         AngryClone.Windows.vcxproj -> D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe
+     1>Done Building Project "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\AngryClone.Windows.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.49
