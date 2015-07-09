@@ -5,6 +5,12 @@
 #include "Content\Sample3DSceneRenderer.h"
 #include "Content\SampleFpsTextRenderer.h"
 
+
+#include "Level.h"
+#include "Agile.h"
+#include <btBulletDynamicsCommon.h>
+#include "MyRenderer.h"
+
 // Renders Direct2D and 3D content on the screen.
 namespace AngryClone
 {
@@ -37,6 +43,13 @@ namespace AngryClone
 		// TODO: Replace with your own content renderers.
 		std::unique_ptr<Sample3DSceneRenderer> m_sceneRenderer;
 		std::unique_ptr<SampleFpsTextRenderer> m_fpsTextRenderer;
+		std::unique_ptr<MyRenderer> my_sceneRenderer;
+
+		std::unique_ptr<Level> m_level;
+		MyRenderer* m_renderer;
+		vector<Cube^> m_cubes;
+		Platform::Agile<Windows::ApplicationModel::Core::CoreApplicationView> m_applicationView;
+		bool m_windowClosed;
 
 		Windows::Foundation::IAsyncAction^ m_renderLoopWorker;
 		Concurrency::critical_section m_criticalSection;

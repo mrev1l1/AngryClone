@@ -36,6 +36,8 @@ DirectXPage::DirectXPage():
 	window->VisibilityChanged +=
 		ref new TypedEventHandler<CoreWindow^, VisibilityChangedEventArgs^>(this, &DirectXPage::OnVisibilityChanged);
 
+	window->KeyDown += ref new TypedEventHandler<CoreWindow^, Windows::UI::Core::KeyEventArgs^>(this, &DirectXPage::OnKeyDown);
+
 	DisplayInformation^ currentDisplayInformation = DisplayInformation::GetForCurrentView();
 
 	currentDisplayInformation->DpiChanged +=
@@ -165,22 +167,22 @@ void DirectXPage::AppBarButton_Click(Object^ sender, RoutedEventArgs^ e)
 void DirectXPage::OnPointerPressed(Object^ sender, PointerEventArgs^ e)
 {
 	// When the pointer is pressed begin tracking the pointer movement.
-	m_main->StartTracking();
+	//m_main->StartTracking();
 }
 
 void DirectXPage::OnPointerMoved(Object^ sender, PointerEventArgs^ e)
 {
 	// Update the pointer tracking code.
-	if (m_main->IsTracking())
+	/*if (m_main->IsTracking())
 	{
 		m_main->TrackingUpdate(e->CurrentPoint->Position.X);
-	}
+	}*/
 }
 
 void DirectXPage::OnPointerReleased(Object^ sender, PointerEventArgs^ e)
 {
 	// Stop tracking pointer movement when the pointer is released.
-	m_main->StopTracking();
+	//m_main->StopTracking();
 }
 
 void DirectXPage::OnCompositionScaleChanged(SwapChainPanel^ sender, Object^ args)
@@ -195,4 +197,15 @@ void DirectXPage::OnSwapChainPanelSizeChanged(Object^ sender, SizeChangedEventAr
 	critical_section::scoped_lock lock(m_main->GetCriticalSection());
 	m_deviceResources->SetLogicalSize(e->NewSize);
 	m_main->CreateWindowSizeDependentResources();
+}
+
+void DirectXPage::OnKeyDown(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::KeyEventArgs^ e)
+{
+	String^ pressedKey = e->VirtualKey.ToString();
+
+	if (pressedKey == L"Space")
+	{
+		int a = 0;
+		//TODO make it jump!
+	}
 }

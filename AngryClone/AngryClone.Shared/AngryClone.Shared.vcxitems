@@ -14,8 +14,21 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cube.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CubeMotionState.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CubeRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Direct3DBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Level.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MyRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Physics.cpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)AngryCloneMain.h" />
     <ClCompile Include="$(MSBuildThisFileDirectory)AngryCloneMain.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cube.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CubeMotionState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CubeRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Direct3DBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Level.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MyRenderer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
     <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
@@ -28,6 +41,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Content\Sample3DSceneRenderer.h" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Content\SampleFpsTextRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Content\Sample3DSceneRenderer.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Physics.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="$(MSBuildThisFileDirectory)Content\SamplePixelShader.hlsl">

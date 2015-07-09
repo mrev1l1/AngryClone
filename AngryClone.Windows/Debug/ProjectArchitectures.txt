@@ -1,1 +1,0 @@
-D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\AngryClone.Windows.vcxproj;x86

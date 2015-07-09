@@ -9,15 +9,20 @@ using namespace Concurrency;
 
 // Loads and initializes application assets when the application is loaded.
 AngryCloneMain::AngryCloneMain(const std::shared_ptr<DX::DeviceResources>& deviceResources) :
-	m_deviceResources(deviceResources), m_pointerLocationX(0.0f)
+m_deviceResources(deviceResources), m_pointerLocationX(0.0f), m_level(std::unique_ptr<Level>(new Level()))
 {
 	// Register to be notified if the Device is lost or recreated
 	m_deviceResources->RegisterDeviceNotify(this);
 
 	// TODO: Replace this with your app's content initialization.
-	m_sceneRenderer = std::unique_ptr<Sample3DSceneRenderer>(new Sample3DSceneRenderer(m_deviceResources));
+//	m_sceneRenderer = std::unique_ptr<Sample3DSceneRenderer>(new Sample3DSceneRenderer(m_deviceResources));
+	//my_sceneRenderer = std::unique_ptr<MyRenderer>(new MyRenderer(m_deviceResources));
 
-	m_fpsTextRenderer = std::unique_ptr<SampleFpsTextRenderer>(new SampleFpsTextRenderer(m_deviceResources));
+//	m_fpsTextRenderer = std::unique_ptr<SampleFpsTextRenderer>(new SampleFpsTextRenderer(m_deviceResources));
+
+	m_renderer = new MyRenderer(m_deviceResources);
+	//m_renderer->Initialize(Windows::UI::Core::CoreWindow::GetForCurrentThread());
+	m_level->Initialise(m_renderer);
 
 	// TODO: Change the timer settings if you want something other than the default variable timestep mode.
 	// e.g. for 60 FPS fixed timestep update logic, call:
@@ -37,7 +42,10 @@ AngryCloneMain::~AngryCloneMain()
 void AngryCloneMain::CreateWindowSizeDependentResources() 
 {
 	// TODO: Replace this with the size-dependent initialization of your app's content.
-	m_sceneRenderer->CreateWindowSizeDependentResources();
+//	m_sceneRenderer->CreateWindowSizeDependentResources();
+	//my_sceneRenderer->CreateWindowSizeDependentResources();
+
+	m_renderer->CreateWindowSizeDependentResources();
 }
 
 void AngryCloneMain::StartRenderLoop()
@@ -47,7 +55,7 @@ void AngryCloneMain::StartRenderLoop()
 	{
 		return;
 	}
-
+	
 	// Create a task that will be run on a background thread.
 	auto workItemHandler = ref new WorkItemHandler([this](IAsyncAction ^ action)
 	{
@@ -81,8 +89,15 @@ void AngryCloneMain::Update()
 	m_timer.Tick([&]()
 	{
 		// TODO: Replace this with your app's content update functions.
-		m_sceneRenderer->Update(m_timer);
-		m_fpsTextRenderer->Update(m_timer);
+//		m_sceneRenderer->Update(m_timer);
+//		m_fpsTextRenderer->Update(m_timer);
+		//my_sceneRenderer->Update(m_timer);
+		
+		m_level->Update();
+		m_renderer->Update(m_timer);
+		//Windows::UI::Core::CoreWindow::GetForCurrentThread()->Dispatcher->ProcessEvents(Windows::UI::Core::CoreProcessEventsOption::ProcessAllIfPresent);
+		m_renderer->Render();
+		//m_renderer->Present(); // This call is synchronized to the display frame rate.
 	});
 }
 
@@ -90,7 +105,9 @@ void AngryCloneMain::Update()
 void AngryCloneMain::ProcessInput()
 {
 	// TODO: Add per frame input handling here.
-	m_sceneRenderer->TrackingUpdate(m_pointerLocationX);
+	//m_sceneRenderer->TrackingUpdate(m_pointerLocationX);
+	//my_sceneRenderer->TrackingUpdate(m_pointerLocationX);
+	
 }
 
 // Renders the current frame according to the current application state.
@@ -119,8 +136,11 @@ bool AngryCloneMain::Render()
 
 	// Render the scene objects.
 	// TODO: Replace this with your app's content rendering functions.
-	m_sceneRenderer->Render();
-	m_fpsTextRenderer->Render();
+//	m_sceneRenderer->Render();
+//	m_fpsTextRenderer->Render();
+	//my_sceneRenderer->Render();
+
+	m_renderer->Render();
 
 	return true;
 }
@@ -128,14 +148,19 @@ bool AngryCloneMain::Render()
 // Notifies renderers that device resources need to be released.
 void AngryCloneMain::OnDeviceLost()
 {
-	m_sceneRenderer->ReleaseDeviceDependentResources();
-	m_fpsTextRenderer->ReleaseDeviceDependentResources();
+	/*m_sceneRenderer->ReleaseDeviceDependentResources();
+	m_fpsTextRenderer->ReleaseDeviceDependentResources();*/
+
+	m_renderer->ReleaseDeviceDependentResources();
 }
 
 // Notifies renderers that device resources may now be recreated.
 void AngryCloneMain::OnDeviceRestored()
 {
-	m_sceneRenderer->CreateDeviceDependentResources();
-	m_fpsTextRenderer->CreateDeviceDependentResources();
+	/*m_sceneRenderer->CreateDeviceDependentResources();
+	m_fpsTextRenderer->CreateDeviceDependentResources();*/
+	//my_sceneRenderer->CreateDeviceDependentResources();
+
+	m_renderer->CreateDeviceDependentResources();
 	CreateWindowSizeDependentResources();
 }

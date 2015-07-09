@@ -1,10 +1,18 @@
-﻿Build started 07.07.2015 16:29:13.
+﻿Build started 09.07.2015 11:14:38.
      1>Project "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\AngryClone.Windows.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _DEBUG /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"pch.h" /Fp"Debug\pch.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Content\Sample3DSceneRenderer.cpp"
-         Sample3DSceneRenderer.cpp
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _DEBUG /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Level.cpp"
+         Level.cpp
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\level.cpp(27): warning C4316: 'CubeMotionState' : object allocated on the heap may not be aligned 16
        CreateWinMD:
-         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio 2013\VC\\lib\store" /LIBPATH:"D:\Visual Studio 2013\VC\\lib" d2d1.lib d3d11.lib dxgi.lib ole32.lib windowscodecs.lib dwrite.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:ONLY /WINMDFILE:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\AngryCloneMain.obj
+         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio 2013\VC\\lib\store" /LIBPATH:"D:\Visual Studio 2013\VC\\lib" d2d1.lib d3d11.lib dxgi.lib ole32.lib windowscodecs.lib dwrite.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:ONLY /WINMDFILE:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\Cube.obj
+         Debug\CubeMotionState.obj
+         Debug\CubeRenderer.obj
+         Debug\Direct3DBase.obj
+         Debug\Level.obj
+         Debug\MyRenderer.obj
+         Debug\Physics.obj
+         Debug\AngryCloneMain.obj
          Debug\pch.obj
          Debug\DeviceResources.obj
          Debug\SampleFpsTextRenderer.obj
@@ -12,8 +20,112 @@
          Debug\App.xaml.obj
          Debug\DirectXPage.xaml.obj
          Debug\XamlTypeInfo.Impl.g.obj
+         "D:\Visual Studio 2013\Projects\AngryClone\Debug\BulletDynamics.Windows\BulletDynamics.Windows.lib"
+         "D:\Visual Studio 2013\Projects\AngryClone\Debug\LinearMath.Windows\LinearMath.Windows.lib"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btAxisSweep3.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBroadphaseProxy.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btDbvt.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btDbvtBroadphase.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btDispatcher.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMultiSapBroadphase.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btOverlappingPairCache.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btQuantizedBvh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSimpleBroadphase.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btActivatingCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBox2dBox2dCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBoxBoxCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBoxBoxDetector.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionDispatcher.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionObject.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionWorld.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionWorldImporter.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCompoundCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCompoundCompoundCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvex2dConvex2dAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexConcaveCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexConvexAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexPlaneCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btDefaultCollisionConfiguration.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btEmptyCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGhostObject.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btHashedSimplePairCache.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btInternalEdgeUtility.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btManifoldResult.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSimulationIslandManager.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSphereBoxCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSphereSphereCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSphereTriangleCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btUnionFind.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\SphereTriangleDetector.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBox2dShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBoxShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBvhTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCapsuleShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCompoundShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConcaveShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConeShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvex2dShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexHullShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexInternalShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexPointCloudShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexPolyhedron.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCylinderShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btEmptyShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btHeightfieldTerrainShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMinkowskiSumShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMultimaterialTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMultiSphereShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btOptimizedBvh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btPolyhedralConvexShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btScaledBvhTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btShapeHull.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSphereShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btStaticPlaneShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btStridingMeshInterface.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTetrahedronShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleBuffer.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleCallback.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleIndexVertexArray.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleIndexVertexMaterialArray.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleMesh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btUniformScalingShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btContactProcessing.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGenericPoolAllocator.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGImpactBvh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGImpactCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGImpactQuantizedBvh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGImpactShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleShapeEx.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\gim_box_set.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\gim_contact.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\gim_memory.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\gim_tri_collision.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btContinuousConvexCollision.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexCast.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGjkConvexCast.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGjkEpa2.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGjkEpaPenetrationDepthSolver.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGjkPairDetector.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMinkowskiPenetrationDepthSolver.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btPersistentManifold.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btPolyhedralContactClipping.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btRaycastCallback.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSubSimplexConvexCast.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btVoronoiSimplexSolver.obj"
        Link:
-         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio 2013\VC\\lib\store" /LIBPATH:"D:\Visual Studio 2013\VC\\lib" d2d1.lib d3d11.lib dxgi.lib ole32.lib windowscodecs.lib dwrite.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:NO /WINMDFILE:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\AngryCloneMain.obj
+         D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio 2013\VC\\lib\store" /LIBPATH:"D:\Visual Studio 2013\VC\\lib" d2d1.lib d3d11.lib dxgi.lib ole32.lib windowscodecs.lib dwrite.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:NO /WINMDFILE:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\Cube.obj
+         Debug\CubeMotionState.obj
+         Debug\CubeRenderer.obj
+         Debug\Direct3DBase.obj
+         Debug\Level.obj
+         Debug\MyRenderer.obj
+         Debug\Physics.obj
+         Debug\AngryCloneMain.obj
          Debug\pch.obj
          Debug\DeviceResources.obj
          Debug\SampleFpsTextRenderer.obj
@@ -21,10 +133,108 @@
          Debug\App.xaml.obj
          Debug\DirectXPage.xaml.obj
          Debug\XamlTypeInfo.Impl.g.obj
+         "D:\Visual Studio 2013\Projects\AngryClone\Debug\BulletDynamics.Windows\BulletDynamics.Windows.lib"
+         "D:\Visual Studio 2013\Projects\AngryClone\Debug\LinearMath.Windows\LinearMath.Windows.lib"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btAxisSweep3.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBroadphaseProxy.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btDbvt.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btDbvtBroadphase.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btDispatcher.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMultiSapBroadphase.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btOverlappingPairCache.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btQuantizedBvh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSimpleBroadphase.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btActivatingCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBox2dBox2dCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBoxBoxCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBoxBoxDetector.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionDispatcher.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionObject.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionWorld.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionWorldImporter.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCompoundCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCompoundCompoundCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvex2dConvex2dAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexConcaveCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexConvexAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexPlaneCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btDefaultCollisionConfiguration.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btEmptyCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGhostObject.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btHashedSimplePairCache.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btInternalEdgeUtility.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btManifoldResult.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSimulationIslandManager.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSphereBoxCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSphereSphereCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSphereTriangleCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btUnionFind.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\SphereTriangleDetector.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBox2dShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBoxShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btBvhTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCapsuleShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCollisionShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCompoundShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConcaveShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConeShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvex2dShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexHullShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexInternalShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexPointCloudShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexPolyhedron.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btCylinderShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btEmptyShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btHeightfieldTerrainShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMinkowskiSumShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMultimaterialTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMultiSphereShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btOptimizedBvh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btPolyhedralConvexShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btScaledBvhTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btShapeHull.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSphereShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btStaticPlaneShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btStridingMeshInterface.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTetrahedronShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleBuffer.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleCallback.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleIndexVertexArray.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleIndexVertexMaterialArray.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleMesh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleMeshShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btUniformScalingShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btContactProcessing.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGenericPoolAllocator.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGImpactBvh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGImpactCollisionAlgorithm.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGImpactQuantizedBvh.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGImpactShape.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btTriangleShapeEx.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\gim_box_set.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\gim_contact.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\gim_memory.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\gim_tri_collision.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btContinuousConvexCollision.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btConvexCast.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGjkConvexCast.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGjkEpa2.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGjkEpaPenetrationDepthSolver.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btGjkPairDetector.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btMinkowskiPenetrationDepthSolver.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btPersistentManifold.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btPolyhedralContactClipping.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btRaycastCallback.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSubSimplexConvexCast.obj"
+         "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btVoronoiSimplexSolver.obj"
          Debug\XamlTypeInfo.g.obj
+            Creating library D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.lib and object D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exp
          AngryClone.Windows.vcxproj -> D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe
      1>Done Building Project "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\AngryClone.Windows.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.44
+Time Elapsed 00:00:18.03

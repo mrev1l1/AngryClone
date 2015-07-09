@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)AngryCloneMain.h" />
@@ -18,6 +18,27 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Content\SampleFpsTextRenderer.h">
       <Filter>Content</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Physics.h">
+      <Filter>Merger</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cube.h">
+      <Filter>Merger</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Direct3DBase.h">
+      <Filter>Merger</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CubeMotionState.h">
+      <Filter>Merger</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Level.h">
+      <Filter>Merger</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CubeRenderer.h">
+      <Filter>Merger</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MyRenderer.h">
+      <Filter>Merger</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)AngryCloneMain.cpp" />
@@ -30,6 +51,27 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)Content\SampleFpsTextRenderer.cpp">
       <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Physics.cpp">
+      <Filter>Merger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cube.cpp">
+      <Filter>Merger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Direct3DBase.cpp">
+      <Filter>Merger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CubeRenderer.cpp">
+      <Filter>Merger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)CubeMotionState.cpp">
+      <Filter>Merger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Level.cpp">
+      <Filter>Merger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MyRenderer.cpp">
+      <Filter>Merger</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -46,6 +88,9 @@
     </Filter>
     <Filter Include="Content">
       <UniqueIdentifier>{4a206efb-067c-43d0-812f-b5555ae85039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Merger">
+      <UniqueIdentifier>{86d2f10f-1557-45d6-b391-bc1f3b2fb47c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
