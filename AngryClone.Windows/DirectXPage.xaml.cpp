@@ -167,22 +167,22 @@ void DirectXPage::AppBarButton_Click(Object^ sender, RoutedEventArgs^ e)
 void DirectXPage::OnPointerPressed(Object^ sender, PointerEventArgs^ e)
 {
 	// When the pointer is pressed begin tracking the pointer movement.
-	m_main->StartTracking();
+	//m_main->StartTracking();
 }
 
 void DirectXPage::OnPointerMoved(Object^ sender, PointerEventArgs^ e)
 {
 	// Update the pointer tracking code.
-	if (m_main->IsTracking())
+	/*if (m_main->IsTracking())
 	{
 		m_main->TrackingUpdate(e->CurrentPoint->Position.X);
-	}
+	}*/
 }
 
 void DirectXPage::OnPointerReleased(Object^ sender, PointerEventArgs^ e)
 {
 	// Stop tracking pointer movement when the pointer is released.
-	m_main->StopTracking();
+	//m_main->StopTracking();
 }
 
 void DirectXPage::OnCompositionScaleChanged(SwapChainPanel^ sender, Object^ args)
@@ -207,6 +207,6 @@ void DirectXPage::OnKeyDown(Windows::UI::Core::CoreWindow^ sender, Windows::UI::
 	{
 		int a = 0;
 		//TODO make it jump!
-		m_main->m_level->Kick();
+ 		m_main->m_level->Kick();
 	}
 }
