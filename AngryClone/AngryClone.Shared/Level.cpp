@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "Level.h"
 #include "CubeMotionState.h"
+#include "PseudoSphereMotionState.h"
 
 Level::Level(void)
 {
@@ -35,6 +36,27 @@ void Level::Initialise(MyRenderer* cubeRenderer)
 		}
 	}
 }
+
+void Level::Initialise(PseudoSphereRenderer* sphereRenderer)
+{
+	btDefaultMotionState* groundMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, -1, 0)));
+	auto groundShape = new btStaticPlaneShape(btVector3(0, 1, 0), 1);
+	m_physics.AddPhysicalObject(groundShape, groundMotionState, 0, btVector3(0, 0, 0));
+
+	Sphere = sphereRenderer->CreatePseudoSphere();
+
+	auto x = -0.5f / 10.0f;
+	auto y = 0.5f;
+	auto z = -5.0f;
+
+	auto fallShape = new btSphereShape(btScalar(0.5));
+	btMotionState* fallMotionState = new PseudoSphereMotionState(Sphere, btTransform(btQuaternion(0, 0, 0, 1), btVector3(x, y, z)));
+	btScalar mass = 1;
+	btVector3 fallInertia(0, 0, 0);
+	fallShape->calculateLocalInertia(mass, fallInertia);
+	m_physics.AddPhysicalObject(fallShape, fallMotionState, mass, fallInertia);
+}
+
 
 Level::~Level(void)
 {

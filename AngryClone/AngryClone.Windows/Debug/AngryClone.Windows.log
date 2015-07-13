@@ -1,9 +1,8 @@
-﻿Build started 09.07.2015 11:14:38.
+﻿Build started 13.07.2015 10:39:42.
      1>Project "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\AngryClone.Windows.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _DEBUG /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Level.cpp"
-         Level.cpp
-     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\level.cpp(27): warning C4316: 'CubeMotionState' : object allocated on the heap may not be aligned 16
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D _DEBUG /D _UNICODE /D UNICODE /D _DEBUG /D WINAPI_FAMILY=WINAPI_FAMILY_APP /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /wd4453 /wd28204 /FU"C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt /bigobj "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\PseudoSphereRenderer.cpp"
+         PseudoSphereRenderer.cpp
        CreateWinMD:
          D:\Visual Studio 2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Visual Studio 2013\VC\\lib\store" /LIBPATH:"D:\Visual Studio 2013\VC\\lib" d2d1.lib d3d11.lib dxgi.lib ole32.lib windowscodecs.lib dwrite.lib kernel32.lib /MANIFEST:NO /DEBUG /PDB:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /APPCONTAINER /WINMD:ONLY /WINMDFILE:"D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.winmd" /DYNAMICBASE /NXCOMPAT /MACHINE:X86 Debug\Cube.obj
          Debug\CubeMotionState.obj
@@ -12,6 +11,9 @@
          Debug\Level.obj
          Debug\MyRenderer.obj
          Debug\Physics.obj
+         Debug\PseudoSphere.obj
+         Debug\PseudoSphereMotionState.obj
+         Debug\PseudoSphereRenderer.obj
          Debug\AngryCloneMain.obj
          Debug\pch.obj
          Debug\DeviceResources.obj
@@ -125,6 +127,9 @@
          Debug\Level.obj
          Debug\MyRenderer.obj
          Debug\Physics.obj
+         Debug\PseudoSphere.obj
+         Debug\PseudoSphereMotionState.obj
+         Debug\PseudoSphereRenderer.obj
          Debug\AngryCloneMain.obj
          Debug\pch.obj
          Debug\DeviceResources.obj
@@ -231,10 +236,9 @@
          "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btSubSimplexConvexCast.obj"
          "D:\Visual Studio 2013\Projects\AngryClone\Bullet\!VSProject\BulletColision\BulletColision.Windows\Debug\btVoronoiSimplexSolver.obj"
          Debug\XamlTypeInfo.g.obj
-            Creating library D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.lib and object D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exp
          AngryClone.Windows.vcxproj -> D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.Windows\AngryClone.Windows.exe
      1>Done Building Project "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Windows\AngryClone.Windows.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:18.03
+Time Elapsed 00:00:08.16

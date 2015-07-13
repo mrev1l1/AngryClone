@@ -39,6 +39,15 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MyRenderer.h">
       <Filter>Merger</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphereRenderer.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphere.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphereMotionState.h">
+      <Filter>Content</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)AngryCloneMain.cpp" />
@@ -72,6 +81,15 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)MyRenderer.cpp">
       <Filter>Merger</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphereRenderer.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphere.cpp">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphereMotionState.cpp">
+      <Filter>Content</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

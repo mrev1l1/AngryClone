@@ -20,9 +20,12 @@ m_deviceResources(deviceResources), m_pointerLocationX(0.0f), m_level(std::uniqu
 
 //	m_fpsTextRenderer = std::unique_ptr<SampleFpsTextRenderer>(new SampleFpsTextRenderer(m_deviceResources));
 
-	m_renderer = new MyRenderer(m_deviceResources);
+	//!!!!!!!!!!!!!!!!!!!!!!!!!!m_renderer = new MyRenderer(m_deviceResources);
+	SphereRenderer = new PseudoSphereRenderer(m_deviceResources);
+
 	//m_renderer->Initialize(Windows::UI::Core::CoreWindow::GetForCurrentThread());
-	m_level->Initialise(m_renderer);
+	//!!!!!!!!!!!!!!!!!!!!m_level->Initialise(m_renderer);
+	m_level->Initialise(SphereRenderer);
 
 	// TODO: Change the timer settings if you want something other than the default variable timestep mode.
 	// e.g. for 60 FPS fixed timestep update logic, call:
@@ -45,7 +48,8 @@ void AngryCloneMain::CreateWindowSizeDependentResources()
 //	m_sceneRenderer->CreateWindowSizeDependentResources();
 	//my_sceneRenderer->CreateWindowSizeDependentResources();
 
-	m_renderer->CreateWindowSizeDependentResources();
+	//!!!!!!!!!!!!!!!!!!m_renderer->CreateWindowSizeDependentResources();
+	SphereRenderer->CreateWindowSizeDependentResources();
 }
 
 void AngryCloneMain::StartRenderLoop()
@@ -94,9 +98,11 @@ void AngryCloneMain::Update()
 		//my_sceneRenderer->Update(m_timer);
 		
 		m_level->Update();
-		m_renderer->Update(m_timer);
+		//!!!!!!!!!!!!!!!!!!!!!!!!m_renderer->Update(m_timer);
+		SphereRenderer->Update(m_timer);
 		//Windows::UI::Core::CoreWindow::GetForCurrentThread()->Dispatcher->ProcessEvents(Windows::UI::Core::CoreProcessEventsOption::ProcessAllIfPresent);
-		m_renderer->Render();
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!m_renderer->Render();
+		SphereRenderer->Render();
 		//m_renderer->Present(); // This call is synchronized to the display frame rate.
 	});
 }
@@ -140,7 +146,8 @@ bool AngryCloneMain::Render()
 //	m_fpsTextRenderer->Render();
 	//my_sceneRenderer->Render();
 
-	m_renderer->Render();
+	//!!!!!!!!!!!!!!!!!!!!!!!!m_renderer->Render();
+	SphereRenderer->Render();
 
 	return true;
 }
@@ -151,7 +158,8 @@ void AngryCloneMain::OnDeviceLost()
 	/*m_sceneRenderer->ReleaseDeviceDependentResources();
 	m_fpsTextRenderer->ReleaseDeviceDependentResources();*/
 
-	m_renderer->ReleaseDeviceDependentResources();
+	//!!!!!!!!!!!!!m_renderer->ReleaseDeviceDependentResources();
+	SphereRenderer->ReleaseDeviceDependentResources();
 }
 
 // Notifies renderers that device resources may now be recreated.
@@ -161,6 +169,7 @@ void AngryCloneMain::OnDeviceRestored()
 	m_fpsTextRenderer->CreateDeviceDependentResources();*/
 	//my_sceneRenderer->CreateDeviceDependentResources();
 
-	m_renderer->CreateDeviceDependentResources();
+	//!!!!!!!!!!!!!!!!!!m_renderer->CreateDeviceDependentResources();
+	SphereRenderer->CreateWindowSizeDependentResources();
 	CreateWindowSizeDependentResources();
 }

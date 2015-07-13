@@ -158,6 +158,11 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Bullet\!VSProject\BulletColision\BulletColision.WindowsPhone\BulletColision.WindowsPhone.vcxproj">
       <Project>{52409709-6500-4ded-9dc7-60dfd1f1a74b}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
     </ProjectReference>
     <ProjectReference Include="..\..\Bullet\!VSProject\BulletDynamics\BulletDynamics.WindowsPhone\BulletDynamics.WindowsPhone.vcxproj">
       <Project>{9776ea19-9978-4ed8-9e8b-a530242fcbc5}</Project>

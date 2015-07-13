@@ -10,6 +10,7 @@
 #include "Agile.h"
 #include <btBulletDynamicsCommon.h>
 #include "MyRenderer.h"
+#include "PseudoSphereRenderer.h"
 
 // Renders Direct2D and 3D content on the screen.
 namespace AngryClone
@@ -20,10 +21,10 @@ namespace AngryClone
 		AngryCloneMain(const std::shared_ptr<DX::DeviceResources>& deviceResources);
 		~AngryCloneMain();
 		void CreateWindowSizeDependentResources();
-		void StartTracking() { m_sceneRenderer->StartTracking(); }
-		void TrackingUpdate(float positionX) { m_pointerLocationX = positionX; }
-		void StopTracking() { m_sceneRenderer->StopTracking(); }
-		bool IsTracking() { return m_sceneRenderer->IsTracking(); }
+		void StartTracking() { SphereRenderer->StartTracking(); }
+		void TrackingUpdate(float positionX) { m_pointerLocationX = positionX; SphereRenderer->TrackingUpdate(positionX); }
+		void StopTracking() { SphereRenderer->StopTracking(); }
+		bool IsTracking() { return SphereRenderer->IsTracking(); }
 		void StartRenderLoop();
 		void StopRenderLoop();
 		Concurrency::critical_section& GetCriticalSection() { return m_criticalSection; }
@@ -46,6 +47,10 @@ namespace AngryClone
 		std::unique_ptr<MyRenderer> my_sceneRenderer;
 
 		std::unique_ptr<Level> m_level;
+
+		PseudoSphereRenderer* SphereRenderer;
+		PseudoSphere^ MySphere;
+
 		MyRenderer* m_renderer;
 		vector<Cube^> m_cubes;
 		Platform::Agile<Windows::ApplicationModel::Core::CoreApplicationView> m_applicationView;

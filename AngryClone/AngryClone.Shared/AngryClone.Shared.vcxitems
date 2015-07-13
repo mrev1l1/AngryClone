@@ -21,6 +21,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Level.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MyRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Physics.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphere.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphereMotionState.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphereRenderer.cpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)AngryCloneMain.h" />
     <ClCompile Include="$(MSBuildThisFileDirectory)AngryCloneMain.cpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Cube.h" />
@@ -42,6 +45,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)Content\SampleFpsTextRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Content\Sample3DSceneRenderer.cpp" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Physics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphere.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphereMotionState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphereRenderer.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="$(MSBuildThisFileDirectory)Content\SamplePixelShader.hlsl">
