@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{75e0b204-3bdd-4ae6-99df-e6eec73538ce}</ItemsProjectGuid>
+    <ItemsRootNamespace>AngryClone</ItemsRootNamespace>
+    <ItemsProjectName>AngryClone.Shared</ItemsProjectName>
+    <SharedGUID>fa6f49ba-81d4-47db-8362-129da1a23a57</SharedGUID>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Cube.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CubeMotionState.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CubeRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Direct3DBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Level.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MyRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Physics.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphere.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphereMotionState.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphereRenderer.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)AngryCloneMain.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)AngryCloneMain.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Cube.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CubeMotionState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CubeRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Direct3DBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Level.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MyRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\DeviceResources.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Common\DeviceResources.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\DirectXHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\StepTimer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Content\SampleFpsTextRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Content\Sample3DSceneRenderer.h" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Content\SampleFpsTextRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Content\Sample3DSceneRenderer.cpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Physics.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphere.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphereMotionState.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphereRenderer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\SamplePixelShader.hlsl">
+      <ShaderType>Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\SampleVertexShader.hlsl">
+      <ShaderType>Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+</Project>
