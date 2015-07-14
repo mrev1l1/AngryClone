@@ -13,6 +13,7 @@ MyRenderer::MyRenderer(const std::shared_ptr<DX::DeviceResources>& deviceResourc
 m_loadingComplete(false),
 m_degreesPerSecond(45),
 m_indexCount(0),
+ps_indexCount(0),
 m_tracking(false),
 m_deviceResources(deviceResources)
 {
@@ -58,12 +59,18 @@ void MyRenderer::CreateWindowSizeDependentResources()
 		XMMatrixTranspose(perspectiveMatrix * orientationMatrix)
 		);
 
+	XMStoreFloat4x4(
+		&ps_constantBufferData.projection,
+		XMMatrixTranspose(perspectiveMatrix * orientationMatrix)
+		);
+
 	// Eye is at (0,0.7,1.5), looking at point (0,-0.1,0) with the up-vector along the y-axis.
 	static const XMVECTORF32 eye = { -10.0f, 0.7f, -8.0f, 0.0f };
 	static const XMVECTORF32 at = { 0.0f, 8.0f, 0.0f, 0.0f	};
 	static const XMVECTORF32 up = { 0.0f, 1.0f, 0.0f, 0.0f };
 
 	XMStoreFloat4x4(&m_constantBufferData.view, XMMatrixTranspose(XMMatrixLookAtRH(eye, at, up)));
+	XMStoreFloat4x4(&ps_constantBufferData.view, XMMatrixTranspose(XMMatrixLookAtRH(eye, at, up)));
 }
 
 // Called once per frame, rotates the cube and calculates the model and view matrices.
@@ -112,73 +119,6 @@ void MyRenderer::StopTracking()
 // Renders one frame using the vertex and pixel shaders.
 void MyRenderer::Render()
 {
-	// Loading is asynchronous. Only draw geometry after it's loaded.
-	//if (!m_loadingComplete)
-	//{
-	//	return;
-	//}
-
-	//auto context = m_deviceResources->GetD3DDeviceContext();
-
-	//// Prepare the constant buffer to send it to the graphics device.
-	//context->UpdateSubresource(
-	//	m_constantBuffer.Get(),
-	//	0,
-	//	NULL,
-	//	&m_constantBufferData,
-	//	0,
-	//	0
-	//	);
-
-	//// Each vertex is one instance of the VertexPositionColor struct.
-	//UINT stride = sizeof(AngryClone::VertexPositionColor);
-	//UINT offset = 0;
-	//context->IASetVertexBuffers(
-	//	0,
-	//	1,
-	//	m_vertexBuffer.GetAddressOf(),
-	//	&stride,
-	//	&offset
-	//	);
-
-	//context->IASetIndexBuffer(
-	//	m_indexBuffer.Get(),
-	//	DXGI_FORMAT_R16_UINT, // Each index is one 16-bit unsigned integer (short).
-	//	0
-	//	);
-
-	//context->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
-
-	//context->IASetInputLayout(m_inputLayout.Get());
-
-	//// Attach our vertex shader.
-	//context->VSSetShader(
-	//	m_vertexShader.Get(),
-	//	nullptr,
-	//	0
-	//	);
-
-	//// Send the constant buffer to the graphics device.
-	//context->VSSetConstantBuffers(
-	//	0,
-	//	1,
-	//	m_constantBuffer.GetAddressOf()
-	//	);
-
-	//// Attach our pixel shader.
-	//context->PSSetShader(
-	//	m_pixelShader.Get(),
-	//	nullptr,
-	//	0
-	//	);
-
-	//// Draw the objects.
-	//context->DrawIndexed(
-	//	m_indexCount,
-	//	0,
-	//	0
-	//	);
-
 	if (!m_loadingComplete)
 		return;
 
@@ -241,6 +181,8 @@ void MyRenderer::Render()
 			0
 			);
 	}
+	
+	
 }
 
 void MyRenderer::CreateDeviceDependentResources()
@@ -294,6 +236,15 @@ void MyRenderer::CreateDeviceDependentResources()
 			&constantBufferDesc,
 			nullptr,
 			&m_constantBuffer
+			)
+			);
+
+		CD3D11_BUFFER_DESC ps_constantBufferDesc(sizeof(ModelViewProjectionConstantBuffer), D3D11_BIND_CONSTANT_BUFFER);
+		DX::ThrowIfFailed(
+			m_deviceResources->GetD3DDevice()->CreateBuffer(
+			&constantBufferDesc,
+			nullptr,
+			&ps_constantBuffer
 			)
 			);
 	});
@@ -367,23 +318,31 @@ void MyRenderer::CreateDeviceDependentResources()
 			&m_indexBuffer
 			)
 			);
+
+		
 	});
+
+
 
 	// Once the cube is loaded, the object is ready to be rendered.
 	createCubeTask.then([this]() {
 		m_loadingComplete = true;
 	});
+
+	
 }
 
 void MyRenderer::ReleaseDeviceDependentResources()
 {
 	m_loadingComplete = false;
 	m_vertexShader.Reset();
+	m_vertexShader.Reset();
 	m_inputLayout.Reset();
 	m_pixelShader.Reset();
 	m_constantBuffer.Reset();
 	m_vertexBuffer.Reset();
-	m_indexBuffer.Reset();
+	m_indexBuffer.Reset(); 
+
 }
 
 Cube^ MyRenderer::CreateCube()
@@ -391,4 +350,9 @@ Cube^ MyRenderer::CreateCube()
 	auto cube = ref new Cube();
 	m_cubes.push_back(cube);
 	return cube;
+}
+PseudoSphere^ MyRenderer::CreatePseudoSphere()
+{
+	Sphere = ref new PseudoSphere();
+	return Sphere;
 }

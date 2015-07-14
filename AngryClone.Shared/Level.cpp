@@ -26,28 +26,40 @@ void Level::Initialise(MyRenderer* cubeRenderer)
 
 			auto fallShape = new btBoxShape(btVector3(btScalar(0.5), btScalar(0.5), btScalar(0.5)));
 			btMotionState* fallMotionState = new CubeMotionState(cube, btTransform(btQuaternion(0, 0, 0, 1), btVector3(x, y, z)));
-			btScalar mass = 1;
+			btScalar mass = 5;
 			btVector3 fallInertia(0, 0, 0);
 			fallShape->calculateLocalInertia(mass, fallInertia);
 			m_physics.AddPhysicalObject(fallShape, fallMotionState, mass, fallInertia);
-
 			//Попробовать добавить 1 куб, поиграться с параметрами
 			//return;
 		}
 	}
+	
+	/*Sphere = cubeRenderer->CreatePseudoSphere();
+
+	auto x = -5.05f;
+	auto y = 2.5f;
+	auto z = -2.5f;
+
+	auto fallShape = new btSphereShape(btScalar(0.5f));
+	btMotionState* fallMotionState = new PseudoSphereMotionState(Sphere, btTransform(btQuaternion(0, 0, 0, 1), btVector3(x, y, z)));
+	btScalar mass = 1;
+	btVector3 fallInertia(0, 0, 0);
+	fallShape->calculateLocalInertia(mass, fallInertia);
+	m_physics.AddPhysicalObject(fallShape, fallMotionState, mass, fallInertia);*/
 }
 
 void Level::Initialise(PseudoSphereRenderer* sphereRenderer)
 {
-	btDefaultMotionState* groundMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, -1, 0)));
+	/*btDefaultMotionState* groundMotionState = new btDefaultMotionState(btTransform(btQuaternion(0, 0, 0, 1), btVector3(0, -1, 0)));
 	auto groundShape = new btStaticPlaneShape(btVector3(0, 1, 0), 1);
-	m_physics.AddPhysicalObject(groundShape, groundMotionState, 0, btVector3(0, 0, 0));
+	m_physics.AddPhysicalObject(groundShape, groundMotionState, 0, btVector3(0, 0, 0));*/
 
 	Sphere = sphereRenderer->CreatePseudoSphere();
 
-	auto x = -0.05f;
+	auto x = -5.05f;
 	auto y = 0.5f;
-	auto z = -5.0f;
+	auto z = -2.5f;
 
 	auto fallShape = new btSphereShape(btScalar(0.5f));
 	btMotionState* fallMotionState = new PseudoSphereMotionState(Sphere, btTransform(btQuaternion(0, 0, 0, 1), btVector3(x, y, z)));
@@ -61,7 +73,13 @@ void Level::Initialise(PseudoSphereRenderer* sphereRenderer)
 
 void Level::Kick()
 {
-	m_physics.m_rigidBodies.at(m_physics.m_rigidBodies.size()-1)->applyImpulse(btVector3(0, 10, 0), btVector3(0.5, 0, 0));
+	m_physics.m_rigidBodies.at(m_physics.m_rigidBodies.size()-1)->applyImpulse(btVector3(0, 15, 0), btVector3(0.5, 0, 0));
+}
+
+void Level::Punch()
+{
+	auto velocity = m_physics.m_rigidBodies.at(m_physics.m_rigidBodies.size() - 1)->getVelocityInLocalPoint(btVector3(0.5f, 0, 0));
+	m_physics.m_rigidBodies.at(m_physics.m_rigidBodies.size() - 1)->applyImpulse(btVector3(30, 0, 0), btVector3(0.5f, 0, 0));
 }
 
 Level::~Level(void)

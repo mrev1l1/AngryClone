@@ -205,8 +205,12 @@ void DirectXPage::OnKeyDown(Windows::UI::Core::CoreWindow^ sender, Windows::UI::
 
 	if (pressedKey == L"Space")
 	{
-		int a = 0;
 		//TODO make it jump!
- 		m_main->m_level->Kick();
+ 		m_main->m_level->Punch();
+	}
+	if (pressedKey == L"Up")
+	{
+		//TODO make it jump!
+		m_main->m_level->Kick();
 	}
 }
