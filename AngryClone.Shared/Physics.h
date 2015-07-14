@@ -1,5 +1,5 @@
 #pragma once
-
+#include <btBulletCollisionCommon.h>
 #include <btBulletDynamicsCommon.h>
 
 class Physics
@@ -7,7 +7,7 @@ class Physics
 public:
 	Physics(void);
 	~Physics(void);
-
+	int test;
 	void Update();
 	void AddPhysicalObject(btCollisionShape* collisionShape, btMotionState* motionState, btScalar mass, const btVector3& inertia);
 private:
