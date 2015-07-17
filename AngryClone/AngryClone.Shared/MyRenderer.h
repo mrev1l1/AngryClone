@@ -7,6 +7,7 @@
 #include <d3d11.h>
 #include <memory>
 #include "Cube.h"
+#include "PseudoSphere.h"
 
 	// This sample renderer instantiates a basic rendering pipeline.
 	class MyRenderer
@@ -39,20 +40,27 @@
 		Microsoft::WRL::ComPtr<ID3D11PixelShader>	m_pixelShader;
 		Microsoft::WRL::ComPtr<ID3D11Buffer>		m_constantBuffer;
 
+		Microsoft::WRL::ComPtr<ID3D11InputLayout>	ps_inputLayout;
+		Microsoft::WRL::ComPtr<ID3D11Buffer>		ps_vertexBuffer;
+		Microsoft::WRL::ComPtr<ID3D11Buffer>		ps_indexBuffer;
+		Microsoft::WRL::ComPtr<ID3D11Buffer>		ps_constantBuffer;
 		// System resources for cube geometry.
 		AngryClone::ModelViewProjectionConstantBuffer	m_constantBufferData;
+		AngryClone::ModelViewProjectionConstantBuffer	ps_constantBufferData;
 		uint32	m_indexCount;
-
+		uint32	ps_indexCount;
 		// Variables used with the rendering loop.
 		bool	m_loadingComplete;
 		float	m_degreesPerSecond;
 		bool	m_tracking;
 
 		int singleRotator;
-
+	
 	public:
 		Cube^ CreateCube();
 		vector<Cube^> m_cubes;
+		PseudoSphere^ CreatePseudoSphere();
+		PseudoSphere^ Sphere;
 	};
 
 

@@ -48,6 +48,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)PseudoSphereMotionState.h">
       <Filter>Content</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelFileHandler.h">
+      <Filter>Model_Loader</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)AngryCloneMain.cpp" />
@@ -91,6 +94,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphereMotionState.cpp">
       <Filter>Content</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelFileHandler.cpp">
+      <Filter>Model_Loader</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="$(MSBuildThisFileDirectory)Content\SamplePixelShader.hlsl">
@@ -109,6 +115,9 @@
     </Filter>
     <Filter Include="Merger">
       <UniqueIdentifier>{86d2f10f-1557-45d6-b391-bc1f3b2fb47c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Model_Loader">
+      <UniqueIdentifier>{361438fd-609d-4814-bba8-519ed066cfcb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

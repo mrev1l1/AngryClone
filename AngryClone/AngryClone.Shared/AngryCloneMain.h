@@ -45,7 +45,7 @@ namespace AngryClone
 		std::unique_ptr<Sample3DSceneRenderer> m_sceneRenderer;
 		std::unique_ptr<SampleFpsTextRenderer> m_fpsTextRenderer;
 		std::unique_ptr<MyRenderer> my_sceneRenderer;
-
+	public:
 		std::unique_ptr<Level> m_level;
 
 		PseudoSphereRenderer* SphereRenderer;

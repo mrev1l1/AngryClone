@@ -19,6 +19,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)CubeRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Direct3DBase.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Level.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)ModelFileHandler.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MyRenderer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)Physics.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)PseudoSphere.cpp" />
@@ -31,6 +32,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)CubeRenderer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Direct3DBase.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Level.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)ModelFileHandler.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MyRenderer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
     <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">

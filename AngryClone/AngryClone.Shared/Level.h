@@ -16,6 +16,12 @@ public:
 	void Initialise(MyRenderer* cubeRenderer);
 	void Initialise(PseudoSphereRenderer* sphereRenderer);
 	void Update();
+	
+	void Kick();
+	void Punch();
+	void Left();
+	void Right();
+	void Back();
 private:
 	Physics m_physics;
 	std::vector<Cube^> m_cubes;

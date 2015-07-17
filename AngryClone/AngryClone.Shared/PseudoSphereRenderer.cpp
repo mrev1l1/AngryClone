@@ -59,13 +59,13 @@ void PseudoSphereRenderer::CreateWindowSizeDependentResources()
 		);
 
 	// Eye is at (0,0.7,1.5), looking at point (0,-0.1,0) with the up-vector along the y-axis.
-	/*static const XMVECTORF32 eye = { -10.0f, 0.7f, -8.0f, 0.0f };
+	static const XMVECTORF32 eye = {-2.0f, .0f, -30.f, 0.f };//{ -30.0f, 0.7f, -30.0f, 0.0f };
 	static const XMVECTORF32 at = { 0.0f, 8.0f, 0.0f, 0.0f };
-	static const XMVECTORF32 up = { 0.0f, 1.0f, 0.0f, 0.0f };*/
-
-	static const XMVECTORF32 eye = { 0.f, 0.7f, 1.625f, 0.0f };
-	static const XMVECTORF32 at = { -0.f, -0.1f, -0.f, 0.0f };
 	static const XMVECTORF32 up = { 0.0f, 1.0f, 0.0f, 0.0f };
+
+	/*static const XMVECTORF32 eye = { 0.f, 0.7f, 3.625f, 0.0f };
+	static const XMVECTORF32 at = { -0.f, -0.1f, -0.f, 0.0f };
+	static const XMVECTORF32 up = { 0.0f, 1.0f, 0.0f, 0.0f };*/
 
 	XMStoreFloat4x4(&m_constantBufferData.view, XMMatrixTranspose(XMMatrixLookAtRH(eye, at, up)));
 }
@@ -106,7 +106,7 @@ void PseudoSphereRenderer::Render()
 
 	auto context = m_deviceResources->GetD3DDeviceContext();
 	
-	//XMStoreFloat4x4(&m_constantBufferData.model, Sphere->m_modelMatrix);
+	XMStoreFloat4x4(&m_constantBufferData.model, Sphere->m_modelMatrix);
 
 	// Prepare the constant buffer to send it to the graphics device.
 	context->UpdateSubresource(

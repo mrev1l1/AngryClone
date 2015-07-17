@@ -1,0 +1,131 @@
+﻿Build started 15.07.2015 13:31:48.
+     1>Project "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.WindowsPhone\AngryClone.WindowsPhone.vcxproj" on node 5 (Build target(s)).
+     1>FxCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\fxc.exe /nologo /E"main" /T ps_4_0_level_9_3 /Fo "D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.WindowsPhone\SamplePixelShader.cso" /Zi "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Content\SamplePixelShader.hlsl" 
+         compilation object save succeeded; see D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.WindowsPhone\SamplePixelShader.cso
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\fxc.exe /nologo /E"main" /T vs_4_0_level_9_3 /Fo "D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.WindowsPhone\SampleVertexShader.cso" /Zi "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Content\SampleVertexShader.hlsl" 
+         compilation object save succeeded; see D:\Visual Studio 2013\Projects\AngryClone\Debug\AngryClone.WindowsPhone\SampleVertexShader.cso
+       ClCompile:
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.WindowsPhone\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D PSAPI_VERSION=2 /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /D _UITHREADCTXT_SUPPORT=0 /D _UNICODE /D UNICODE /D _DEBUG /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"pch.h" /Fp"Debug\AngryClone.WindowsPhone.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.1\\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.1\\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\pch.cpp"
+         pch.cpp
+         D:\Visual Studio 2013\VC\bin\CL.exe /c /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.WindowsPhone\\" /I"Generated Files\\" /IDebug\ /I"D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\\" /ZI /ZW /ZW:nostdlib /nologo /W3 /WX- /sdl /MP /Od /Oy- /D PSAPI_VERSION=2 /D WINAPI_FAMILY=WINAPI_FAMILY_PHONE_APP /D _UITHREADCTXT_SUPPORT=0 /D _UNICODE /D UNICODE /D _DEBUG /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /FU"C:\Program Files (x86)\Microsoft SDKs\WindowsPhoneApp\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\References\CommonConfiguration\neutral\platform.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.1\\References\CommonConfiguration\Neutral\Windows.winmd" /FU"C:\Program Files (x86)\Windows Phone Kits\8.1\\References\CommonConfiguration\Neutral\Windows.winmd" /analyze- /errorReport:prompt "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\BasicLoader.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\BasicReaderWriter.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Cube.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\CubeMotionState.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\CubeRenderer.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Direct3DBase.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Level.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\MyRenderer.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\PseudoSphere.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\PseudoSphereMotionState.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\PseudoSphereRenderer.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\AngryCloneMain.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Common\DeviceResources.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Content\SampleFpsTextRenderer.cpp" "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Content\Sample3DSceneRenderer.cpp" App.xaml.cpp DirectXPage.xaml.cpp "Generated Files\XamlTypeInfo.Impl.g.cpp"
+         BasicLoader.cpp
+         BasicReaderWriter.cpp
+         Cube.cpp
+         CubeMotionState.cpp
+         CubeRenderer.cpp
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\cuberenderer.cpp(277): warning C4018: '<' : signed/unsigned mismatch
+         Direct3DBase.cpp
+         Level.cpp
+         MyRenderer.cpp
+         Physics.cpp
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\level.cpp(28): warning C4316: 'CubeMotionState' : object allocated on the heap may not be aligned 16
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\level.cpp(65): warning C4316: 'PseudoSphereMotionState' : object allocated on the heap may not be aligned 16
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\direct3dbase.cpp(105): warning C4973: 'Windows::Graphics::Display::DisplayPropertiesEventHandler' : marked as deprecated
+                 Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+                 This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayPropertiesEventHandler ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+                 This diagnostic occurred while importing type 'Windows::Graphics::Display::DisplayProperties ' from assembly 'Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null'.
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\direct3dbase.cpp(105): warning C4973: 'Windows::Graphics::Display::DisplayProperties::CurrentOrientation::get' : marked as deprecated
+                 Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\direct3dbase.cpp(292): warning C4973: 'Windows::Graphics::Display::DisplayProperties::CurrentOrientation::get' : marked as deprecated
+                 Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\direct3dbase.cpp(343): warning C4973: 'Windows::Graphics::Display::DisplayProperties::LogicalDpi::get' : marked as deprecated
+                 Message: 'DisplayProperties may be altered or unavailable for releases after Windows Phone 8.1. Instead, use DisplayInformation.'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(64): error C2059: syntax error : '('
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(69): error C2039: 'btDynamicsWorld' : is not a member of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(69): error C2039: 'world' : is not a member of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(69): error C2039: 'btScalar' : is not a member of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(69): error C2146: syntax error : missing ')' before identifier 'timeStep'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(69): error C2182: 'myTickCallback' : illegal use of type 'void'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(69): error C2059: syntax error : ')'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(69): error C2143: syntax error : missing ';' before '{'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(69): error C2447: '{' : missing function header (old-style formal list?)
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(91): error C2039: 'btCollisionShape' : is not a member of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(91): error C2039: 'collisionShape' : is not a member of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(91): error C2039: 'btMotionState' : is not a member of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(91): error C2039: 'motionState' : is not a member of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(91): error C2039: 'btScalar' : is not a member of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(91): error C2146: syntax error : missing ')' before identifier 'mass'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(91): error C2761: 'void Physics::AddPhysicalObject(btCollisionShape *,btMotionState *,btScalar,const btVector3 &)' : member function redeclaration not allowed
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(91): error C2059: syntax error : ')'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(92): error C2143: syntax error : missing ';' before '{'
+     1>d:\visual studio 2013\projects\angryclone\angryclone\angryclone.shared\physics.cpp(92): error C2447: '{' : missing function header (old-style formal list?)
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: '<Dispose>' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_IDisposable____abi_<Dispose>(void)'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: '__hr' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_IDisposable____abi_<Dispose>(void)'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: '__abi_translateCurrentException' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_IDisposable____abi_<Dispose>(void)'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: '__abi_winrt_throw_on_disposed' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_Details_IPrintable____abi_ToString(Platform::String ^*)'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: '__abi_disposed' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_Details_IPrintable____abi_ToString(Platform::String ^*)'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: '__abi_returnValue' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_Details_IPrintable____abi_ToString(Platform::String ^*)'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: 'ToString' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_Details_IPrintable____abi_ToString(Platform::String ^*)'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: '__tempValue' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_Details_IPrintable____abi_ToString(Platform::String ^*)'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: 'Equals' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_Details_IEquatable____abi_Equals(Platform::Object ^,bool *)'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: '__param0' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_Details_IEquatable____abi_Equals(Platform::Object ^,bool *)'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+     1>d:\visual studio 2013\vc\include\vccorlib.h(1325): error C2039: 'GetHashCode' : is not a member of 'btRigidBody' (D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.Shared\Physics.cpp)
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 This diagnostic occurred in the compiler generated function 'long Platform::String::__abi_Platform_Details_IEquatable____abi_GetHashCode(int *)'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+                 d:\visual studio 2013\projects\angryclone\bullet\bulletdynamics\dynamics\btrigidbody.h(62) : see declaration of 'btRigidBody'
+         PseudoSphere.cpp
+         PseudoSphereMotionState.cpp
+         PseudoSphereRenderer.cpp
+         AngryCloneMain.cpp
+         DeviceResources.cpp
+         SampleFpsTextRenderer.cpp
+         Sample3DSceneRenderer.cpp
+         App.xaml.cpp
+         DirectXPage.xaml.cpp
+         XamlTypeInfo.Impl.g.cpp
+     1>Done Building Project "D:\Visual Studio 2013\Projects\AngryClone\AngryClone\AngryClone.WindowsPhone\AngryClone.WindowsPhone.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:01:56.68
